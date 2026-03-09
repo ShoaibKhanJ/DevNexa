@@ -25,9 +25,44 @@ z-index:9999;
 background:#0d0d0d;
 }
 
+/* navigation */
 
+.menu-toggle{
+font-size:28px;
+cursor:pointer;
+display:none;
+}
 
+/* Desktop menu */
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
 
+/* Mobile */
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+background:#111;
+position:absolute;
+top:70px;
+right:0;
+width:200px;
+padding:20px;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+}
 
 .nav{
 display:flex;
