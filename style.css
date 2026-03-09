@@ -754,3 +754,69 @@ color:#fff;
 font-size:14px;
 color:#888;
 }
+
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Internship Certificate */
+.certificate{
+padding:100px 0;
+background:#111;
+text-align:center;
+}
+
+.cert-text{
+color:#aaa;
+margin-bottom:40px;
+}
+
+.cert-image{
+position:relative;
+max-width:700px;
+margin:auto;
+}
+
+.cert-image img{
+width:100%;
+border-radius:10px;
+filter:blur(8px);
+}
+
+.blur-overlay{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.6);
+padding:15px 30px;
+border-radius:6px;
+color:white;
+font-weight:bold;
+}
+
+/* Announcement */
+.internship-call{
+padding:100px 0;
+background:#111;
+text-align:center;
+}
+
+.call-text{
+color:#aaa;
+margin-bottom:40px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.call-letter img{
+width:100%;
+max-width:700px;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+margin-bottom:30px;
+}
+
+
