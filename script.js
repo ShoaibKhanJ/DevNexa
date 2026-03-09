@@ -1,24 +1,24 @@
 // Smooth scroll for navigation
 
 document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", function(e){
 
-link.addEventListener("click", function(e){
+    const href = this.getAttribute("href");
 
-e.preventDefault()
+    if(href.startsWith("#")){   // only run smooth scroll for section links
+      e.preventDefault();
 
-const target = document.querySelector(this.getAttribute("href"))
+      const target = document.querySelector(href);
 
-if(target){
+      if(target){
+        target.scrollIntoView({
+          behavior:"smooth"
+        });
+      }
+    }
 
-target.scrollIntoView({
-behavior:"smooth"
-})
-
-}
-
-})
-
-})
+  });
+});
 
 /* =========================
    PORTFOLIO FILTER
